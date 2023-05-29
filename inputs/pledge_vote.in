@@ -1,0 +1,114 @@
+// The program input for pledge_vote/src/main.leo
+[stake_token]
+token: Token = Token {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    amount: 1234u64,
+    is_staked: false,
+    _nonce: 0group,
+};
+amount: u64 = 321u64;
+
+[start_voting_campaign]
+public owner : address = aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt;
+pid : field = 1231231field;
+
+[agree]
+ticket: Ticket = Ticket {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    pid: 1231231field,
+    _nonce: 2269999810550925607749877409484501365593363038993986491914061482265590507942group
+};
+
+[disagree]
+ticket: Ticket = Ticket {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    pid: 1231231field,
+    _nonce: 2269999810550925607749877409484501365593363038993986491914061482265590507942group
+};
+
+[award_amount]
+fee:u64 = 15u64;
+vote_distribution_ratio:u64 = 80u64;
+
+[issue]
+owner: address = aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt;
+amount: u64 = 1234u64;
+
+// Inputs for the `stake` function.
+[stake]
+token: Token = Token {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    amount: 1234u64,
+    is_staked: false,
+    _nonce: 0group,
+};
+amount: u64 = 321u64;
+
+// Inputs for the `unstake` function.
+[unstake]
+stakeed_token: Token = Token {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    amount: 1234u64,
+    is_staked: true,
+    _nonce: 0group,
+};
+amount: u64 = 322u64;
+
+// Inputs for the `unstake` function.
+[transfer]
+token: Token = Token {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    amount: 1234u64,
+    is_staked: false,
+    _nonce: 0group,
+};
+receiver: address = aleo1t0uer3jgtsgmx5tq6x6f9ecu8tr57rzzfnc2dgmcqldceal0ls9qf6st7a;
+amount: u64 = 322u64;
+
+[join]
+t0: Token = Token {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    amount: 1234u64,
+    is_staked: false,
+    _nonce: 0group,
+};
+t1: Token = Token {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    amount: 1234u64,
+    is_staked: false,
+    _nonce: 0group,
+};
+
+[split]
+t0: Token = Token {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    amount: 1234u64,
+    is_staked: false,
+    _nonce: 0group,
+};
+amount: u64 = 322u64;
+
+[fee]
+t0: Token = Token {
+    owner: aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt,
+    gates: 0u64,
+    amount: 1234u64,
+    is_staked: false,
+    _nonce: 0group,
+};
+amount: u64 = 322u64;
+
+[get_stake_amount]
+owner: address = aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt;
+
+[get_mapping]
+owner: address = aleo1eavacq46a7tqm9ec0kyelvmun6qlxyquhrfv6aza82jnmljsp5yq52xvxt;
